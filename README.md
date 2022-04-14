@@ -1,5 +1,33 @@
 # Versioning-Introduction
 
+## What is it about ? 
+
+## Git on my computer 
+
+First, you need to install the software : just dowload it for free on 
+
+Second - and that is very important ! some features are very useful to use your software properly, which you can adjust by entering commands in the Git Bash. 
+
+You will need to : 
+1. define the location of your repository(ies), by locating or creating a file first, and then initiating your new repository :
+
+                    $ cd Documents
+                    $ mkdir ProjetsBecode
+
+There you can check your actual location with pwd command ! 
+You can then initiate a new repository using the following command : 
+
+                    $ git init
+
+
+
+2. tell who you are and what your email is, so that your modifications have an author with
+                                                 $ git config --global user.name "manon vadja" 
+                                                 
+
+Note : the use of --global makes your command effective on all your repositories. 
+
+
 ## En deux mots
 
 ```
