@@ -27,14 +27,16 @@ Note : the use of --global makes your command effective on all your repositories
 
 (There you can check your actual location with pwd command).
 
-
-To start a working area, you can then initiate a new repository using the following command :
+Once you are located in a proper file, you can start a working area. For that, you can initiate a new repository using the following command :
 
                     $ git init
 
-You can also copy an existing remote repository into your local workspace, e.g. something you want to collaborate on github, using :
+You can also copy an existing remote repository into your local workspace using :
 
                     $ git clone copyherethewebaddressoftherepo
+
+If you are collaborating with other people, you may prefer to use the pull command, which will update the repository you cloned before with other people's commits :
+                    $ git pull copyherethewebaddressoftherepo
 
 
 ## Move your files from local to global repositories
@@ -48,9 +50,16 @@ If you want to add a file and save it into you repository, you fill follow two s
 ! Note that if you want to modify you file afterwards, you'll have to add it again (like you can't board new passengers when you're on the ran) !
 
 2. Ready for departure ! Now you will save your file into your repository, where your name and time of modification will be recorded. You may also want to leave a comment with your update, by adding -m after the commit command :
-                    $ git commit -m "I'm so proud I fixed this I leave"
+                    $ git commit -m "I'm so proud I fixed this that I leave a comment about it"
 
 ##Share your files
+
+To see the links existing between your repo and another remote repo, you can use
+                    $ git remote
+or                  $ git remote -v
+
+to display the url of your links too.                     
+  vous permet de créer, d'afficher et de supprimer
 
                        fetch     Download objects and refs from another repository
                        pull      Fetch from and integrate with another repository or a local branch
@@ -58,8 +67,11 @@ If you want to add a file and save it into you repository, you fill follow two s
 
 ## tips
 
-You can check the modifications using the following command :
+You can check the modifications in your working area using the following command :
                     $ git status
+
+You can open a new branch in a directory using
+                    $ git checkout -b "nameofthebranch"
 
 
 
