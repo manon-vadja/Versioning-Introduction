@@ -4,7 +4,7 @@
 
 ## Git on my computer 
 
-First, you need to install the software : just dowload it for free on 
+First, you need to install the software : just dowload it for free on https://git-scm.com/downloads , and keep the default parameters while installing the software. 
 
 Second - and that is very important ! some features are very useful to use your software properly, which you can adjust by entering commands in the Git Bash. 
 
