@@ -36,6 +36,7 @@ You can also copy an existing remote repository into your local workspace using 
                     $ git clone copyherethewebaddressoftherepo
 
 If you are collaborating with other people, you may prefer to use the pull command, which will update the repository you cloned before with other people's commits :
+
                     $ git pull copyherethewebaddressoftherepo
 
 
@@ -50,12 +51,17 @@ If you want to add a file you've worked on and save it into your repository, you
 ! Note that if you want to modify you file afterwards, you'll have to add it again (like you can't board new passengers when you're on the ran) !
 
 If you need to add more than one file, you can do it using different options :
+
                     $ git add file1 file 2 file345
+                    
 or                  $ git add parentfolderbecauseIwantallthesefiles
-or                  $ git add *       
+
+or                  $ git add *    
+
 that will search and add all modified files.
 
 2. Ready for departure ! Now you will save your index into your repository, where your name and time of modification will be recorded. Please note that the default settings requires you to leave a comment (the "message") with your update, by adding -m after the commit command and your message bewteen quotation marks :
+
                     $ git commit -m "mymessage"
 
 That's it !
