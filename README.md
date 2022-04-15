@@ -39,9 +39,9 @@ If you are collaborating with other people, you may prefer to use the pull comma
                     $ git pull copyherethewebaddressoftherepo
 
 
-## Move your files from local to global repositories
+## Working, staging area and committing your work on you repo
 
-If you want to add a file and save it into you repository, you fill follow two steps.
+If you want to add a file you've worked on and save it into your repository, you fill follow two steps.
 
 1. You add it on the staging area (like a plane on a runway ran) using :
 
@@ -52,7 +52,18 @@ If you want to add a file and save it into you repository, you fill follow two s
 2. Ready for departure ! Now you will save your file into your repository, where your name and time of modification will be recorded. You may also want to leave a comment with your update, by adding -m after the commit command :
                     $ git commit -m "I'm so proud I fixed this that I leave a comment about it"
 
-##Share your files
+## Share your files and connecting to distant repositories
+
+To create a link between your repo and another remote repo, you can use :
+
+
+Instead of mentioning the https URL of the repo you want to link to, which will require a login, you can use an SSH key. To use it, you need to create on your own computer a key, that you will refer to github, so every connection you make later will be identified as yours / coming from you computer.
+
+To create that key, type the following command on your gitbash :
+<center>ssh-keygen -o</center> 
+You will be able to specify (or not) where you want to store your key and create a password - and your computer will generate a beautiful key. Afterwards, what you need to do is display your public key by (e.g)
+                    cat C:/Users/Utilisateur/.ssh/id_rsa.pub
+... and copy it into your SSH keys in your personal settings on Github.  
 
 To see the links existing between your repo and another remote repo, you can use
                     $ git remote
@@ -65,7 +76,7 @@ to display the url of your links too.
                        pull      Fetch from and integrate with another repository or a local branch
                        push      Update remote refs along with associated objects
 
-## tips
+## Several tips
 
 You can check the modifications in your working area using the following command :
                     $ git status
