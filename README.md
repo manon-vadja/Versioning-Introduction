@@ -43,31 +43,31 @@ If you are collaborating with other people, you may prefer to use the pull comma
 
 If you want to add a file you've worked on and save it into your repository, you fill follow two steps.
 
-1. You add it on the staging area (like a plane on a runway ran) using :
+1. You need to index your file, i.e. add it on the staging area (like a plane on a runway ran) using :
 
                     $ git add nameofmyfile
 
 ! Note that if you want to modify you file afterwards, you'll have to add it again (like you can't board new passengers when you're on the ran) !
 
-2. Ready for departure ! Now you will save your file into your repository, where your name and time of modification will be recorded. You may also want to leave a comment with your update, by adding -m after the commit command :
-                    $ git commit -m "I'm so proud I fixed this that I leave a comment about it"
+If you need to add more than one file, you can do it using different options :
+                    $ git add file1 file 2 file345
+or                  $ git add parentfolderbecauseIwantallthesefiles
+or                  $ git add *       
+that will search and add all modified files.
 
-## Share your files and connecting to distant repositories
+2. Ready for departure ! Now you will save your index into your repository, where your name and time of modification will be recorded. Please note that the default settings requires you to leave a comment (the "message") with your update, by adding -m after the commit command and your message bewteen quotation marks :
+                    $ git commit -m "mymessage"
 
-To create a link between your repo and another remote repo, you can use :
+That's it !
 
+## Share your files
 
-Instead of mentioning the https URL of the repo you want to link to, which will require a login, you can use an SSH key. To use it, you need to create on your own computer a key, that you will refer to github, so every connection you make later will be identified as yours / coming from you computer.
+### Connecting to distant repositories
 
-To create that key, type the following command on your gitbash :
-<center>ssh-keygen -o</center> 
-You will be able to specify (or not) where you want to store your key and create a password - and your computer will generate a beautiful key. Afterwards, what you need to do is display your public key by (e.g)
-                    cat C:/Users/Utilisateur/.ssh/id_rsa.pub
-... and copy it into your SSH keys in your personal settings on Github.  
-
-To see the links existing between your repo and another remote repo, you can use
-                    $ git remote
-or                  $ git remote -v
+To manage connections to remote repos ("tracked" repos), you will use first the 'remote'command. To make a new link, you will use :
+                    $ git remote add typeheretheadressoftherepo
+To display the repos you already track, use remote command alone or with -v to display the addresses of the repos :
+                    $ git remote -v
 
 to display the url of your links too.                     
   vous permet de créer, d'afficher et de supprimer
@@ -76,7 +76,21 @@ to display the url of your links too.
                        pull      Fetch from and integrate with another repository or a local branch
                        push      Update remote refs along with associated objects
 
+### Find the rights directions
+
+Instead of mentioning the https URL of the repo you want to link to, which will require a login, you can use an SSH key. To use it, you need to create on your own computer a key, that you will refer to github, so every connection you make later will be identified as yours / coming from you computer.
+
+To create that key, type the following command on your gitbash :
+                    ssh-keygen -o
+You will be able to specify (or not) where you want to store your key and create a password - and your computer will generate a beautiful key. Afterwards, what you need to do is display your public key by (e.g)
+                    cat C:/Users/Utilisateur/.ssh/id_rsa.pub
+... and copy it into your SSH keys in your personal settings on Github.  
+
+
+
+
 ## Several tips
+! There is a very useful index of git commands on https://git-scm.com/docs !
 
 You can check the modifications in your working area using the following command :
                     $ git status
