@@ -75,7 +75,6 @@ You can open a new branch in a directory using
 
 ## En deux mots
 
-```
 C'est quoi le principe ? Git est un outil qui permet de faire évoluer un projet :
 1. en gardant une visibilité sur les différents états successifs du projet ou des modifications apportées aux éléments qui le composent ;
 2. en offrant la possibilité d'intégrer des modifications d'éléments de manière progressive au projet global ;
