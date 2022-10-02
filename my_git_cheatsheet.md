@@ -1,5 +1,15 @@
 ### my manual
 
+## En deux mots
+
+C'est quoi le principe ? Git est un outil qui permet de faire évoluer un projet :
+1. en gardant une visibilité sur les différents états successifs du projet ou des modifications apportées aux éléments qui le composent ;
+2. en offrant la possibilité d'intégrer des modifications d'éléments de manière progressive au projet global ;
+3. de manière fluide et rapide grâce à un hachage des données.
+
+Github est une structure en ligne qui permet à chaque développeur/écriveur d'héberger à distance le pendant de son dépôt local dans Git.
+
+
 
 ## Git on my computer
 
@@ -101,6 +111,9 @@ $ git checkout main
 $ git merge mybranchthatworkssowell
 ```
 
+A **Git flow** is the name you can give to a dynamic workspace structured as a tree : e.g., you can tidy up your development, testing and production environment on different branches, as well as dedicated branches for new features, hot fixes or release branches (the prod being the main one), and integrate /merge your work as it goes.
+There are actually different types of flows and different names (git workflow, gitlab flow...), but the idea is about the same. 
+
 ## tips
 
 You can check the modifications in your working area using the following command :
@@ -111,19 +124,11 @@ You can check the modifications in your working area using the following command
 
 
 
-## En deux mots
-
-C'est quoi le principe ? Git est un outil qui permet de faire évoluer un projet :
-1. en gardant une visibilité sur les différents états successifs du projet ou des modifications apportées aux éléments qui le composent ;
-2. en offrant la possibilité d'intégrer des modifications d'éléments de manière progressive au projet global ;
-3. de manière fluide et rapide grâce à un hachage des données.
-
-Github est une structure en ligne qui permet à chaque développeur/écriveur d'héberger à distance le pendant de son dépôt local dans Git.
 
 
 ## Further notes 
 
-### Add a local repo to GitHub using CLI
+### Add a locally created repo to GitHub using CLI
 
 1. Gititialize your folder ! Locate into the root directory, and initialize your directory as a Git repo :
     git init -b main
@@ -132,6 +137,11 @@ Github est une structure en ligne qui permet à chaque développeur/écriveur d'
     git add .
     git commit -m "contenu initial"
         
+To create a repo remotely, use the following command (and download **gh** with `sudo apt install gh`if you haven't done it yet):
+```
+$ gh repo create 
+```
+
 ## bonnes pratiques
 
 Sensitive data can be removed from a repo using 
