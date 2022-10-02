@@ -76,6 +76,10 @@ To see the links existing between your repo and another remote repo, you might u
 That will display the name of the remote repo linked to your current and properly gitted work directory. 
 
 
+If you want to upload on github a repo that exists locally only (properly gitted and committed), you will have to create it using the following command : 
+`$ gh repo create` 
+and just follow the instructions the CLI will return. 
+
 
 ## Share and version your files
 
